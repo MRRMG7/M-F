@@ -1,0 +1,260 @@
+body{
+  margin: 0;
+}
+
+/*CUERPO*/
+.header {
+  background-color: #3498db; /* Azul */
+  color: #fff;
+  padding: 7%;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000; /* Asegura que esté por encima del menú lateral */
+}
+
+h2 {
+  text-align: center;
+  color: aliceblue;
+  font-size: 35px;
+}
+
+/*MENU DE LA DERECHA*/
+.aside {
+  background-color: purple;
+  color: #000000;
+  width: 8%;
+  padding: 5%;
+  position: fixed;
+  top: 16%; /* Altura del menú */
+  right: 0; /* Colocar el menú a la derecha */
+  bottom: 0;
+  border-radius: 20px;
+  margin-top: 1%;
+ 
+}
+
+.aside ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.aside ul li {
+  margin-bottom: 5%;
+}
+
+.aside ul li a {
+  display: block;
+  color: #000000;
+  text-decoration: none;
+  padding: 5%;
+  border-radius: 5px;
+}
+
+.aside ul li a:hover {
+  background-color: #ffffff;
+}
+
+/*CONTENIDO*/
+.main-content {
+  margin-top: 14%; /* Altura del header */
+  padding: 7%;
+  background-color: orange;
+  width: 65%;
+  margin-left: 3%;
+  border-radius: 20px;
+
+ 
+}
+
+.video-table {
+  overflow-x: auto;
+  margin-bottom: 3%;
+}
+
+table {
+  width: 100%;
+}
+
+table td {
+  padding: 15px;
+}
+
+iframe {
+  width: 100%;
+}
+
+/*PIE DE PÁGINA*/
+.social-icons {
+  background-color: #333333;
+  color: #000000;
+  padding: 1%;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-shadow: 1px 1px 3px rgb(255, 0, 0);
+  z-index: 1000; /* Asegura que esté por encima del contenido */
+}
+
+.social-icons {
+  display: inline-block;
+}
+
+.icon {
+  display: inline-block;
+  margin: 0 10px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.icon img {
+  width: 40px; /* Ajusta el tamaño de los iconos según sea necesario */
+}
+
+.icon:hover img {
+  filter: brightness(150%);
+}
+
+.icon:active img {
+  filter: brightness(200%);
+}
+
+----------------------------------
+
+.container{
+  background-color: rgb(36, 54, 54);
+  height: 200px; /* Ajustar altura del header según necesidades */
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+.road{ 
+  height: 150px; /* Reducido para hacer más pequeña la carretera */
+  width: 500%; /* Ajustado para ocupar todo el ancho del header */
+  position: absolute;
+  display: block;
+  background-image: url(../imagenes/360_F_585652808_yeQ6LSvscYDUnNZBaa6l36nfoBRtZKcP.png);
+  background-repeat: repeat-x;
+  background-size: auto 100%; /* Ajustar el tamaño de la imagen */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  animation: road 10s linear infinite;
+}
+.city{ 
+  height: 200px; /* Reducido para hacer más pequeña la ciudad */
+  width: 500%; /* Ajustado para ocupar todo el ancho del header */
+  position: absolute;
+  display: block;
+  background-image: url(../imagenes/pngwing.com.png);
+  background-repeat: repeat-x;
+  background-size: auto 68%; /* Ajustar el tamaño de la imagen */
+  left: 0;
+  right: 0;
+  z-index: 1;
+  bottom: 0;
+  animation: city 20s linear infinite;
+}
+.bike{
+  left: 50%;
+  width: 150px; /* Reducido para adaptarse al header */
+  position: absolute;
+  bottom: 20px; /* Ajustado para alinear con el borde del header */
+  transform: translateX(-50%);
+  z-index: 3;
+}
+.bike img{
+  width: 100%;
+  z-index: 3;
+  /* Eliminar la animación para evitar que se mueva al pasar el mouse */
+}
+.wheel{
+  left: 50%;
+  bottom: 70px; /* Ajustado para alinear con el borde del header */
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 2;
+}
+.wheel img{
+  width: 60px; /* Reducido para adaptarse al header */
+  height: 60px; /* Reducido para mantener la relación de aspecto */
+  z-index: 2; 
+  animation: wheel 2s linear infinite;
+}
+.front{
+  left: -77px; /* Ajustado para alinear con el borde del header */
+  bottom: -47px; /* Ajustado para alinear con el borde del header */
+  position: absolute;
+}
+.back{
+  left: 19px; /* Ajustado para alinear con el borde del header */
+  bottom: -47px; /* Ajustado para alinear con el borde del header */
+  position: absolute;
+}
+@keyframes city{
+  100%{
+      transform: translateX(-2000px); /* Ajustado para adaptarse al header */
+  }
+}
+@keyframes road{
+  100%{
+      transform: translateX(-2000px); /* Ajustado para adaptarse al header */
+  }
+}
+@keyframes wheel{
+  100%{
+      transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+/*NO LE HAGAS CASOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO!
+.banner {
+    background-image: url('https://s3-us-west-2.amazonaws.com/denverbicyclelobby.com/img/source.gif');
+    background-position: center;
+    background-repeat: no-repeat; /* Evitar la repetición de la imagen de fondo */
+  /*  background-size: cover; /* Cubrir completamente la cabecera */
+  /*  height: 100px; /* Altura deseada de la cabecera */
+  /*  position: fixed; /* Fijar la cabecera */
+   /* top: 0;
+    left: 0;
+    width: 100% /* Ancho completo */
+ /*   
+}
+.banner h1 {
+    color: white; /* Color del texto */
+  /*  text-align: center;
+    padding-top: 80px; /* Ajustar el espaciado superior del texto según la altura de la cabecera */
+/*/}
+
+.contenido {
+    padding-top: 200px; /* Ajustar el espaciado superior del contenido para evitar que se superponga con la cabecera */
+   /* padding-left: 20px; /* Agregar un poco de relleno a la izquierda para que el contenido no se pegue al borde */
+/*}
