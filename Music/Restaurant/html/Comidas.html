@@ -52,85 +52,144 @@
           </div>
         </div>
       </nav>
-
-
-
-<!-- Contenido principal -->
-<!-- Contenido principal -->
-<div class="container mt-5">
-    <h2 class="text-center mb-4">Nuestros Vinos</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card">
-          <img src="../imagenes/tinto.png" class="card-img-top" alt="Vino 1">
-          <div class="card-body">
-            <h5 class="card-title">Vino Tinto</h5>
-            <p class="card-text">Descubre Pruno: un vino tinto español de Ribera del Duero. Con su profundo color, aromas a frutas maduras y taninos sedosos, Pruno es la elección perfecta para acompañar tus momentos especiales. ¡Explora su elegancia en cada sorbo!</p>
-            <p class="card-price">$20</p>
-            <div class="card-promo">¡Oferta especial!</div>
-          </div>
+<style>
+      body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f8f9fa;
+      }
+      .menu-section {
+        margin-top: 2rem;
+        padding: 2rem;
+        border-radius: 0.5rem;
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .menu-title {
+        font-size: 2rem;
+        color: #343a40;
+        margin-bottom: 1.5rem;
+      }
+      .menu-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+      }
+      .menu-item img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 0.5rem;
+        margin-right: 1rem;
+      }
+      .menu-item-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+      }
+      .menu-item-description {
+        font-size: 1rem;
+        color: #6c757d;
+      }
+      .menu-item-price {
+        font-size: 1rem;
+        color: #28a745;
+      }
+    </style>
+  </head>
+  <body>
+  
+  <div class="container">
+    <div class="menu-section">
+      <h2 class="menu-title"><i class="bi bi-egg-fried"></i> Entradas</h2>
+      <div class="menu-item">
+        <img src="../imagenes/Carpaccio.png" alt="Carpaccio de Res">
+        <div>
+          <div class="menu-item-title">Carpaccio de Res</div>
+          <div class="menu-item-description">Delgadas láminas de carne de res con rúcula, queso parmesano y aderezo de limón.</div>
+          <div class="menu-item-price">$15.00</div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card">
-          <img src="../imagenes/blanco.png" class="card-img-top" alt="Vino 2">
-          <div class="card-body">
-            <h5 class="card-title">Vino Blanco</h5>
-            <p class="card-text">El vino blanco Benjamin Dulce es una exquisita combinación de uvas cuidadosamente seleccionadas que ofrecen una experiencia sensorial única. Con su característico dulzor equilibrado y refrescante, este vino es perfecto para disfrutar en cualquier ocasión.</p>
-            <p class="card-price">$18</p>
-            <div class="card-promo">¡25% de descuento!</div>
-          </div>
+      <div class="menu-item">
+        <img src="../imagenes/tartar.png" alt="Tartar de Atún">
+        <div>
+          <div class="menu-item-title">Tartar de Atún</div>
+          <div class="menu-item-description">Cubos de atún fresco con aguacate, salsa de soya y sésamo.</div>
+          <div class="menu-item-price">$18.00</div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="card">
-          <img src="../imagenes/rosa.png" class="card-img-top" alt="Vino 3">
-          <div class="card-body">
-            <h5 class="card-title">Vino Rosado</h5>
-            <p class="card-text">El vino rosado de Reinger es una expresión encantadora de elegancia y frescura. Elaborado con una cuidadosa selección de uvas tintas, este vino cautiva con su delicado color rosa pálido y su sabor suave y afrutado</p>
-            <p class="card-price">$22</p>
-            <div class="card-promo">¡Promoción especial!</div>
-          </div>
+      <div class="menu-item">
+        <img src="../imagenes/camarones.png" alt="Camarones al Ajillo">
+        <div>
+          <div class="menu-item-title">Camarones al Ajillo</div>
+          <div class="menu-item-description">Camarones salteados con ajo, perejil y vino blanco.</div>
+          <div class="menu-item-price">$20.00</div>
         </div>
       </div>
-      <!-- Nuevos vinos -->
-      <div class="col-md-4 col-sm-6">
-        <div class="card">
-          <img src="../imagenes/espumoso.png" class="card-img-top" alt="Vino 4">
-          <div class="card-body">
-            <h5 class="card-title">Vino Espumoso</h5>
-            <p class="card-text">El Champbrulé es una exquisita variante del clásico champán, que combina la frescura y la elegancia de este vino espumoso con la dulzura y el carácter único de un toque de caramelo.</p>
-            <p class="card-price">$25</p>
-            <div class="card-promo">¡Celebra con burbujas!</div>
-          </div>
+    </div>
+  
+    <div class="menu-section">
+      <h2 class="menu-title"><i class="bi bi-gear-fill"></i> Platos Principales</h2>
+      <div class="menu-item">
+        <img src="../imagenes/carne.png" alt="Filete Mignon">
+        <div>
+          <div class="menu-item-title">Filete Mignon</div>
+          <div class="menu-item-description">Filete de res con salsa de vino tinto y champiñones, acompañado de puré de papas.</div>
+          <div class="menu-item-price">$30.00</div>
         </div>
       </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="card">
-          <img src="../imagenes/fortificado.png" class="card-img-top" alt="Vino 5">
-          <div class="card-body">
-            <h5 class="card-title">Vino Fortificado</h5>
-            <p class="card-text">El vino fortificado Bothe es una joya enológica que combina la tradición y la calidad en cada sorbo. Elaborado con una cuidadosa selección de uvas y enriquecido con un toque de espirituoso.</p>
-            <p class="card-price">$30</p>
-            <div class="card-promo">¡Intenso y aromático!</div>
-          </div>
+      <div class="menu-item">
+        <img src="../imagenes/salmon.png" alt="Salmón al Horno">
+        <div>
+          <div class="menu-item-title">Salmón al Horno</div>
+          <div class="menu-item-description">Salmón al horno con hierbas frescas, acompañado de verduras asadas.</div>
+          <div class="menu-item-price">$28.00</div>
         </div>
       </div>
-      <div class="col-md-4 col-sm-6 col-sm-12">
-        <div class="card">
-          <img src="../imagenes/postre.png" class="card-img-top" alt="Vino 6">
-          <div class="card-body">
-            <h5 class="card-title">Vino de Postre</h5>
-            <p class="card-text">El vino de postre Errazuriz es una auténtica delicia que corona cualquier comida con un toque de elegancia y dulzura. Elaborado con uvas seleccionadas de los viñedos más prestigiosos.</p>
-            <p class="card-price">$28</p>
-            <div class="card-promo">¡El toque final perfecto!</div>
-          </div>
+      <div class="menu-item">
+        <img src="../imagenes/hamburguesa.png" alt="Hamburguesa Gourmet">
+        <div>
+          <div class="menu-item-title">Hamburguesa Gourmet con Papas</div>
+          <div class="menu-item-description">Hamburguesa de carne de res con queso cheddar, bacon, cebolla caramelizada y salsa especial, acompañada de papas fritas crujientes.</div>
+          <div class="menu-item-price">$22.00</div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="../imagenes/pasta.png " alt="Pasta con Camarones">
+        <div>
+          <div class="menu-item-title">Pasta con Camarones</div>
+          <div class="menu-item-description">Pasta al dente con camarones en una salsa de crema y ajo.</div>
+          <div class="menu-item-price">$24.00</div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="menu-section">
+      <h2 class="menu-title"><i class="bi bi-cupcake"></i> Postres</h2>
+      <div class="menu-item">
+        <img src="../imagenes/tira.png" alt="Tiramisú">
+        <div>
+          <div class="menu-item-title">Tiramisú</div>
+          <div class="menu-item-description">Postre italiano con capas de bizcocho empapado en café, crema de mascarpone y cacao.</div>
+          <div class="menu-item-price">$10.00</div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="../imagenes/creme.png" alt="Crème Brûlée">
+        <div>
+          <div class="menu-item-title">Crème Brûlée</div>
+          <div class="menu-item-description">Crema de vainilla con una capa crujiente de azúcar caramelizado.</div>
+          <div class="menu-item-price">$12.00</div>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="../imagenes/rojos.png" alt="Cheesecake de Frutos Rojos">
+        <div>
+          <div class="menu-item-title">Cheesecake de Frutos Rojos</div>
+          <div class="menu-item-description">Tarta de queso con una base crujiente y cobertura de frutos rojos.</div>
+          <div class="menu-item-price">$11.00</div>
         </div>
       </div>
     </div>
   </div>
-
-
 
 
 
