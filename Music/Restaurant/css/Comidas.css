@@ -38,3 +38,11 @@ body {
     font-size: 1rem;
     color: #28a745;
   }
+  .section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #343a40;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
